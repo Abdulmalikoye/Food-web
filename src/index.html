@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailwind CSS</title>
+  </head>
+  <body class="bg-white font-poppins">
+    <nav
+      class="flex justify-between md:justify-between md:flex-row md:px-[50px] px-[20px] py-10"
+    >
+      <img src="../img/Bella-logo.svg" alt="" class="w-[104px] md:w-[204px]" />
+      <div
+        class="nav-link md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 w-full md:w-fit md:flex hidden"
+      >
+        <ul class="md:flex md:gap-7 flex-col md:flex-row md:items-center">
+          <li>
+            <a
+              href="#"
+              class="text-headcolor font-bold text-[16px] hover:text-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-headcolor font-bold text-[16px] hover:text-primary"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-headcolor font-bold text-[16px] hover:text-primary"
+              >Faq</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-headcolor font-bold text-[16px] hover:text-primary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="block md:hidden">
+        <ion-icon
+          ondblclick="onToggleMenu"
+          name="menu"
+          class="text-3xl cursor-pointer selcted text-black"
+        ></ion-icon>
+      </div>
+    </nav>
+    <section
+      class="mb-10 h-[100vh] bg-no-repeat bg-center bg-[#fafafa] md:bg-hero-pattern bg-cover"
+    >
+      <div
+        class="h-[100vh] pt-12 md:pt-28 px-14 md:px-28 flex flex-col items-center justify-between"
+      >
+        <div class="flex items-center justify-between flex-col">
+          <p class="md:text-white text-[16px] md:text[24px] text-[#737373]">
+            Food app
+          </p>
+          <h3
+            class="text-[24px] md:text-[58px] font-bold text-center text-[#252B42] md:text-white"
+          >
+            Why stay hungry when you can order form Bella Onojie
+          </h3>
+          <p
+            class="md:text-[#F6F6F6] text-[16px] md:text-[24px] md:text-left text-center text-[#737373] my-5"
+          >
+            Download the bella onoje’s food app now on
+          </p>
+          <div class="flex flex-col gap-2 text-center">
+            <button
+              class="w-[263px] h-[58px] bg-primary text-white rounded-3xl"
+            >
+              Playstore
+            </button>
+            <button
+              class="w-[263px] h-[58px] border border-primary text-primary md:border-white md:text-white rounded-3xl"
+            >
+              App store
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-10" />
+    </section>
+    <section class="z-50 mt-[-12rem] md:mt-[-15rem]">
+      <div class="flex items-center justify-center">
+        <img src="../img/Phones.svg" alt="" class="my-0 mx-auto" />
+      </div>
+    </section>
+    <section class="md:px-[150px] px-[50px] py-10">
+      <div class="flex flex-col md:flex-col-reverse gap-8">
+        <h3
+          class="self-center md:text-[44px] font-medium text-[24px] text-[#000000] md:font-bold"
+        >
+          How the app works
+        </h3>
+        <hr />
+      </div>
+
+      <div
+        class="flex flex-col md:flex md:justify-between items-center justify-center md:flex-row-reverse"
+      >
+        <div class="">
+          <h3
+            class="md:text-left text-center text-primary text-[24px] font-bold mb-2"
+          >
+            Create an account
+          </h3>
+          <h1
+            class="md:text-left text-center text-3xl leading-10 font-bold text-[#252B42] mb-4"
+          >
+            Create/login to an existing account to get started
+          </h1>
+          <p
+            class="md:text-left text-center text-[24px] font-medium text-[#737373]"
+          >
+            An account is created with your email and a desired password
+          </p>
+        </div>
+        <img
+          src="../img/Login-sreen.svg"
+          alt=""
+          class="justify-self-start self-start col-span-full row-start-1 row-end-2 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2"
+        />
+      </div>
+      <div
+        class="flex flex-col md:flex md:justify-between md:flex-row justify-center items-center"
+      >
+        <div
+          class="md:col-start-2 md:col-end-3 row-start-2 row-end-3 md:row-start-1 md:row-end-2"
+        >
+          <h3
+            class="md:text-left text-center text-primary text-[24px] font-bold mb-2"
+          >
+            Create an account
+          </h3>
+          <h1
+            class="md:text-left text-center text-3xl leading-10 font-bold text-[#252B42] mb-4"
+          >
+            Create/login to an existing account to get started
+          </h1>
+          <p
+            class="md:text-left text-center text-[24px] font-medium text-[#737373]"
+          >
+            An account is created with your email and a desired password
+          </p>
+        </div>
+        <img
+          src="../img/Login-sreen.svg"
+          alt=""
+          class="justify-self-start self-start col-span-full row-start-1 row-end-2 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2"
+        />
+      </div>
+      <div
+        class="flex flex-col md:flex md:justify-between justify-center items-center md:flex-row-reverse"
+      >
+        <div
+          class="md:col-start-2 md:col-end-3 row-start-2 row-end-3 md:row-start-1 md:row-end-2"
+        >
+          <h3
+            class="md:text-left text-center text-primary text-[24px] font-bold mb-2"
+          >
+            Create an account
+          </h3>
+          <h1
+            class="md:text-left text-center text-3xl leading-10 font-bold text-[#252B42] mb-4"
+          >
+            Create/login to an existing account to get started
+          </h1>
+          <p
+            class="md:text-left text-center text-[24px] font-medium text-[#737373]"
+          >
+            An account is created with your email and a desired password
+          </p>
+        </div>
+        <img
+          src="../img/Login-sreen.svg"
+          alt=""
+          class="justify-self-start self-start col-span-full row-start-1 row-end-2 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2"
+        />
+      </div>
+    </section>
+    <section
+      class="md:bg-footer-texture bg-[#252B42] flex flex-col items-center justify-center gap-8 py-24 px-16"
+    >
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h2 class="text-[30px] font-bold text-white text-center">
+          Download the app now
+        </h2>
+        <p class="text-[16px] font-medium text-white text-center">
+          Available on your favorite store. Start your premium experience now
+        </p>
+      </div>
+      <div class="flex gap-4">
+        <button
+          class="bg-primary w-[142px] h-[64px] text-[16px] font-bold text-white rounded-xl"
+        >
+          Play store
+        </button>
+        <button
+          class="w-[142px] h-[64px] border-2 border-white text-white rounded-xl font-bold text-[16px]"
+        >
+          App store
+        </button>
+      </div>
+    </section>
+    <footer
+      class="flex md:flex-row flex-col gap-3 justify-between items-center md:px-[150px] px-[50px] py-10"
+    >
+      <img src="../img/Bella-logo.svg" alt="" class="hidden md:block" />
+      <div class="flex gap-4 items-center justify-center">
+        <img src="../img/food-fb.svg" alt="" />
+        <img src="../img/food-face.svg" alt="" />
+        <img src="../img/food-Ig.svg" alt="" />
+      </div>
+      <p class="text-xs hidden md:block">Copywright 2020 Bella Onojie.com</p>
+      <p class="text-xs">Just type what's on your mind and we'll</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
